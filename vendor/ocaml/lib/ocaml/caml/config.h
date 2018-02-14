@@ -29,7 +29,7 @@
 #undef NONSTANDARD_DIV_MOD
 #define ASM_CFI_SUPPORTED
 #define OCAML_OS_TYPE "Unix"
-#define OCAML_STDLIB_DIR "/Users/benjamin/Desktop/bucklescript/vendor/ocaml/lib/ocaml"
+#define OCAML_STDLIB_DIR "/home/tincho/local/bsb-native/vendor/ocaml/lib/ocaml"
 #define POSIX_SIGNALS
 #define HAS_C99_FLOAT_OPS
 #define HAS_GETRUSAGE
@@ -73,10 +73,13 @@
 #define SUPPORT_DYNAMIC_LINKING
 #define HAS_MMAP
 #define HAS_PWRITE
-#define HAS_NANOSECOND_STAT 2
+#define HAS_NANOSECOND_STAT 1
+#define HAS_GETHOSTBYNAME_R 6
+#define HAS_GETHOSTBYADDR_R 8
 #define HAS_MKSTEMP
 #define HAS_NICE
 #define HAS_STACK_OVERFLOW_DETECTION
+#define HAS_SIGWAIT
 
 #ifndef CAML_NAME_SPACE
 #include "compatibility.h"
